@@ -1,0 +1,22 @@
+.ctrl-btn {
+    right: 0.5rem;
+    transform: translateY(-125%);
+}
+
+.font-small {
+    font-size: 0.75rem;
+    line-height: 0;
+    opacity: 70%;
+}
+
+.cst-dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.sticky {
+    position:sticky;position:-webkit-sticky;  top:0;
+}

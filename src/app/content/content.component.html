@@ -1,11 +1,153 @@
 <div
-    class="container-fluid p-0"
+    class="container-fluid row gap-4 justify-content-end m-0 mt-4 px-2"
 >
-    <!-- <div
-        class="row justify-content-center align-items-center g-2 text-light"
-    >
-        <div class="col-md-3 bg-primary overflow-hidden">Sidebar</div>
-        <div class="col bg-dark overflow-hidden">Main Content</div>
+    <div class="col-md-3 col-lg-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col row gap-4 m-0 p-0 justify-content-end">
+        <div class="row p-0 m-0 gap-3">
+            <div class="col ps-md-3 pe-0">
+                <div class="d-flex flex-row-reverse justify-content-between align-items-center">
+                    <a href="#" class="btn btn-sm border text-secondary" title="View Github repository"><span>View on Github</span></a>
+                    <h1>Introduction</h1>
+                </div>
+                <p class="h4 fw-light lh-base">Get started with Bootstrap, the world&quot;s most popular framework for building responsive, 
+                    mobile-first sites, with jsDelivr and a template starter page.</p>
+                <div class="d-flex mt-4 mb-5">
+
+                    <div class="d-inline-block d-flex align-items-center">
+                        <a href="https://srv.carbonads.net/ads/click/x/GTND427ECWSI4K3JC6BLYKQUCTBI527JCA7IKZ3JCAYDPKJWCV7DP27KCABDC27MC6AIC2JMCVBICKQEF6YDK27KC6SIT2QUCKBDTK3EHJNCLSIZ" class="d-inline-block" target="_blank" rel="noopener sponsored">
+                            <img src="https://srv.carbonads.net/static/30242/2ba64892272a689daf5cc473b26b988461df56e7" alt="ads via Carbon" border="0" height="100" width="130" data-no-statview="no" style="max-width: 300px;" class="d-inline-block">
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center gap-2 ps-4">
+                        <a href="https://srv.carbonads.net/ads/click/x/GTND427ECWSI4K3JC6BLYKQUCTBI527JCA7IKZ3JCAYDPKJWCV7DP27KCABDC27MC6AIC2JMCVBICKQEF6YDK27KC6SIT2QUCKBDTK3EHJNCLSIZ" class="d-inline carbon-text text-secondary text-decoration-none text-wrap w-50" target="_blank" rel="noopener sponsored" style="font-size: 0.75rem;">
+                            Adobe Creative Cloud for Teams. Put creativity to work.
+                        </a>
+                        <a href="http://carbonads.net/?utm_source=getbootstrapcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="d-inline text-secondary text-decoration-none text-nowrap" target="_blank" rel="noopener sponsored" style="font-size: 0.75rem;">ads via Carbon</a>    
+                    </div>    
+                </div>
+            </div>
+            <div class="col col-lg-3 bg-primary">TOC</div>
+        </div>
+        <div class="row p-0 m-0 gap-3">
+            <div class="col row gap-2">
+                <div class="row gap-1">
+                    <h2>Quick Start</h2>
+                    <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, 
+                        a free open source CDN. Using a package manager or need to download 
+                        the source files? Head to the downloads page.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>CSS</h2>
+                    <p>Copy-paste the stylesheet &lt;link&gt; into your &lt;head&gt; before all 
+                        other stylesheets to load our CSS.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>JS</h2>
+                    <p>Many of our components require the use of JavaScript to function. Specifically, 
+                        they require our own JavaScript plugins and Popper. Place one of the following 
+                        &lt;script&gt;s near the end of your pages, right before the closing &lt;/body&gt; 
+                        tag, to enable them.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Bundle</h2>
+                    <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. 
+                        Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips
+                        and popovers. For more information about what&apos;s included in Bootstrap, please see our 
+                        contents section.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Separate</h2>
+                    <p>If you decide to go with the separate scripts solution, Popper must come first 
+                        (if you&apos;re using tooltips or popovers), and then our JavaScript plugins.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Modules</h2>
+                    <p>
+                        If you use &lt;script type="module"&gt;, please refer to our using Bootstrap as a module section.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Components</h2>
+                    <p>
+                        Curious which components explicitly require our JavaScript and Popper? Click 
+                        the show components link below. If you&apos;re at all unsure about the general 
+                        page structure, keep reading for an example page template.
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Starter template</h2>
+                    <p>
+                        Be sure to have your pages set up with the latest design and development 
+                        standards. That means using an HTML5 doctype and including a viewport meta
+                        tag for proper responsive behaviors. Put it all together and your pages 
+                        should look like this:
+                    </p>
+                </div>
+                <div class="row gap-1">
+                    <h2>Starter template</h2>
+                    <p>
+                        Be sure to have your pages set up with the latest design and development 
+                        standards. That means using an HTML5 doctype and including a viewport meta
+                        tag for proper responsive behaviors. Put it all together and your pages 
+                        should look like this:
+                    </p>
+                    <!-- <pre class="chroma">
+                        <code class="language-html" data-lang="html">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- Optional JavaScript; choose one of the two! --&gt;
+
+    &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+    &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
+    &lt;!--
+    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"&gt;&lt;/script&gt;
+    --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre> -->
+                </div>
+                <div class="row gap-1">
+                    <h2>Important globals</h2>
+                    <p>
+                        Bootstrap employs a handful of important global styles and settings that 
+                        you&quot;ll need to be aware of when using it, all of which are almost 
+                        exclusively geared towards the normalization of cross browser styles. 
+                        Let&quot;s dive in.
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg-3 bg-primary"></div>
+        </div>
+    </div>
+    <!-- <div class="col bg-warning">
+        Top Content
+    </div>
+    <div class="col col-lg-2 bg-primary">
+        TOC
     </div> -->
     
 </div>
