@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
+import { TocComponent } from './toc/toc.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TopHeaderComponent } from './top-header/top-header.component';
     SidebarComponent,
     NavbarComponent,
     ContentComponent,
-    TopHeaderComponent
+    TopHeaderComponent,
+    TocComponent
   ],
   imports: [
     BrowserModule

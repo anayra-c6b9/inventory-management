@@ -1,33 +1,45 @@
-
-<nav class="navbar navbar-expand-md navbar-light bg-light border position-sticky top-0">
-    <div class="d-flex container-fluid">
-        <form action="#" class="position-relative  me-auto">
-            <input type="search" class="form-control pe-5" placeholder="Search docs...">
-            <span class="d-inline-block px-2 py-1 lh-1 fs-6 border position-absolute ctrl-btn">
-                <span class="font-small">
-                    Ctrl+/
+<div class="position-sticky top-0 nav-to-relative toc-nav">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <div class="d-flex container-fluid flex-nowrap">
+            <form action="#" class="position-relative me-auto flex-shrink-1">
+                <input type="search" class="form-control pe-5" placeholder="Search docs...">
+                <span class="d-inline-block px-2 py-1 lh-1 fs-6 border position-absolute ctrl-btn">
+                    <span class="font-small">
+                        Ctrl+/
+                    </span>
                 </span>
-            </span>
-        </form>
-        <div class="dropdown">
-            <button type="button" class="btn btn-light dropdown-toggle border" id="dropdownVersionLink" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-                <span class="d-none d-lg-inline">Bootstrap</span>
-                v5.0
+            </form>
+            <div class="dropdown ms-3">
+                <button type="button" class="btn btn-light dropdown-toggle border" id="dropdownVersionLink" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                    <span class="d-none d-lg-inline">Bootstrap</span>
+                    v5.0
+                </button>
+                <ul class="dropdown-menu cst-dropdown-menu" aria-labelledby="dropdownVersionLink">
+                    <li><span class="dropdown-item">v5 releases</span></li>
+                    <li><a href="#" class="dropdown-item">Latest (5.2x)</a></li>
+                    <li><a href="#" class="dropdown-item">v5.1.3</a></li>
+                    <li><a href="#" class="dropdown-item">v5.0.2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="#" class="dropdown-item">v4.6.8</a></li>
+                    <li><a href="#" class="dropdown-item">v3.4.1</a></li>
+                    <li><a href="#" class="dropdown-item">v2.3.2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="#" class="dropdown-item">All versions</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler ms-3 tgdocs px-1 h-100 border-0" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-label="Toggle Docs" data-bs-target="#docsContentCollapse" aria-controls="docsContentCollapse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="docs-expanded" fill="currentColor" viewBox="0 0 16 16">
+                    <title>Expand</title>
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="docs-collapsed" fill="currentColor" viewBox="0 0 16 16">
+                    <title>Collapse</title>
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                </svg>
             </button>
-            <ul class="dropdown-menu cst-dropdown-menu" aria-labelledby="dropdownVersionLink">
-                <li><span class="dropdown-item">v5 releases</span></li>
-                <li><a href="#" class="dropdown-item">Latest (5.2x)</a></li>
-                <li><a href="#" class="dropdown-item">v5.1.3</a></li>
-                <li><a href="#" class="dropdown-item">v5.0.2</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="#" class="dropdown-item">v4.6.8</a></li>
-                <li><a href="#" class="dropdown-item">v3.4.1</a></li>
-                <li><a href="#" class="dropdown-item">v2.3.2</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="#" class="dropdown-item">All versions</a></li>
-            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
+
 
 

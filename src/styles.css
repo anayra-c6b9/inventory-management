@@ -6,6 +6,12 @@ li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 :root {
@@ -67,10 +73,63 @@ input[type="search"]::-webkit-search-results-decoration {
     position: sticky;
     position: --webkit-sticky;
     top: 5rem;
-    height: calc(100vh - 12rem);
+    max-height: calc(100vh - 6rem);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .my-dropdown-toggle::after {
     content: none;
+}
+
+.spacy-letters {
+    letter-spacing: 2px;
+}
+
+/* .sidebar-collapse {
+    margin-left: -8px;
+} */
+
+.sidebar-collapse::before {
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    width: 1rem;
+    height: 1.25rem;
+    margin-right: 0.125rem;
+    transition: transform 0.35s ease;
+    transform: rotate(0deg);
+    transform-origin: 0.5rem 50%;
+}
+
+.sidebar-collapse[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.toc-index {
+    z-index: 20;
+}
+
+.toc-nav {
+    z-index: 1000;
+}
+
+.tgdocs:focus {
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.3);
+    color: rgb(121, 82, 179);
+}
+
+.tgdocs[aria-expanded="false"] .docs-collapsed,
+.tgdocs[aria-expanded="true"] .docs-expanded{
+    display: none;
+}
+
+.tgdocs[aria-expanded="true"] .docs-collapsed,
+.tgdocs[aria-expanded="false"] .docs-expanded {
+    display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+    .nav-to-relative {
+        position: relative;
+    }
 }
